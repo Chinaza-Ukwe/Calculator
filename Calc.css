@@ -1,0 +1,86 @@
+body {
+    background-image: url(https://wallpapercave.com/wp/wp6476184.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.results {
+    width: 280px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+}
+
+.results p {
+    color: #ff1493;
+    font-size: 2em;
+    margin: 15px;
+    text-align: right;
+    text-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+}
+
+.input {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+button:hover {
+    background: rgba(255, 20, 147, 0.3);
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Special styling for operators */
+button:nth-child(4),
+button:nth-child(8),
+button:nth-child(12),
+button:nth-child(15),
+button:nth-child(16) {
+    background: rgba(255, 20, 147, 0.3);
+    color: #ff1493;
+}
+
+/* Clear button special styling */
+button:last-child {
+    background: rgba(255, 0, 0, 0.3);
+    color: #ff3333;
+}
+
+/* Add some spacing between rows */
+br {
+    display: block;
+    margin: 2px 0;
+}
